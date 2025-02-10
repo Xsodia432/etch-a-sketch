@@ -26,10 +26,6 @@ const drawPad = (squares) => {
         rowDiv.style.backgroundColor = `rgba(${randColor[0]},${randColor[1]},${randColor[2]},${opacity}%)`;
         opacity += 10;
       });
-      rowDiv.addEventListener("mouseup", (e) => {
-        clearInterval(isMouseHeld);
-        console.log("mouse not being held");
-      });
       padContainer.append(rowDiv);
     }
   }
